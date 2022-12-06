@@ -1,0 +1,50 @@
+@import "../config/variable";
+body{
+  overflow: hidden;
+  font-family: $font-family;
+}
+.container {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+a {
+  color: $color-navy;
+}
+button {
+  background-color: transparent;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: $finger-size;
+  color: #fff;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: $border-radius;
+  &-icon {
+    justify-content: center;
+    color: black;
+    padding-right: 0;
+    padding-left: 0;
+    width: $finger-size;
+  }
+  &-blue{
+    color: white;
+    background-color: $color-blue;
+  }
+
+
+}
+.icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
