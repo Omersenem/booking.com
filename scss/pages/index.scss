@@ -4,7 +4,7 @@
 
   padding-bottom: 100px;
   padding-top: 100px;
-  background-color: $color-navy;
+  background: $color-navy url("../img/showcase_back.jpg") no-repeat center center / cover;
 
 }
 .Search {
@@ -14,6 +14,7 @@
   &-form {
     position: relative;
     display: flex;
+    flex-direction: column;
 
   }
 

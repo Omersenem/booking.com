@@ -181,6 +181,7 @@ button {
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
+  font-family: inherit;
   font-weight: bold;
   display: inline-flex;
 }
@@ -196,6 +197,33 @@ button {
 .button-blue {
   color: #fff;
   background-color: #01acee;
+}
+
+.text {
+  height: 40px;
+  color: #083b87;
+  border: 0;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.form-item {
+  position: relative;
+}
+
+.form-item .icon {
+  color: #083b87;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.form-item .text {
+  padding-left: 40px;
 }
 
 .icon {
@@ -262,7 +290,6 @@ td {
 
 .Header {
   height: 68px;
-  border-bottom: 1px solid #ddd;
 }
 
 .Header .container {
@@ -296,7 +323,7 @@ td {
   padding-right: 20px;
   transition: all .2s;
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 100%;
   left: 0;
   right: 0;
@@ -310,6 +337,7 @@ td {
 
 @media (min-width: 768px) {
   .Header-menu {
+    pointer-events: auto;
     opacity: 1;
     box-shadow: none;
     background-color: #0000;
@@ -420,7 +448,7 @@ td {
 .Showcase {
   text-align: center;
   color: #fff;
-  background-color: #083b87;
+  background: #083b87 url("showcase_back.f532638f.jpg") center / cover no-repeat;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -432,6 +460,7 @@ td {
 }
 
 .Search-form {
+  flex-direction: column;
   display: flex;
   position: relative;
 }
