@@ -261,11 +261,12 @@ td {
 }
 
 .Header {
+  height: 68px;
   border-bottom: 1px solid #ddd;
 }
 
 .Header .container {
-  height: 68px;
+  height: 100%;
   align-items: center;
   display: flex;
   position: relative;
@@ -397,6 +398,47 @@ td {
 
 .Header-logo img {
   width: 144px;
+}
+
+.Navigation {
+  height: 50px;
+  background-color: #f1f6ff;
+}
+
+.Navigation .container {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.Navigation-items {
+  margin-right: 20px;
+  font-size: .86em;
+}
+
+.Showcase {
+  text-align: center;
+  color: #fff;
+  background-color: #083b87;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.Search {
+  background-color: #fbbe00;
+  padding: 40px;
+  box-shadow: 0 20px 40px #0003;
+}
+
+.Search-form {
+  display: flex;
+  position: relative;
+}
+
+.Search .asd {
+  position: absolute;
+  right: 0;
 }
 
 /*# sourceMappingURL=index.574c7455.css.map */

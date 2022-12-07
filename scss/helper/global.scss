@@ -1,8 +1,10 @@
 @import "../config/variable";
-body{
+
+body {
   overflow: hidden;
   font-family: $font-family;
 }
+
 .container {
   max-width: $max-width;
   margin-left: auto;
@@ -10,12 +12,15 @@ body{
   padding-left: $gutter;
   padding-right: $gutter;
 }
+
 a {
   color: $color-navy;
 }
+
 button {
   background-color: transparent;
 }
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -26,6 +31,7 @@ button {
   font-weight: bold;
   background-color: transparent;
   border-radius: $border-radius;
+
   &-icon {
     justify-content: center;
     color: black;
@@ -33,13 +39,15 @@ button {
     padding-left: 0;
     width: $finger-size;
   }
-  &-blue{
+
+  &-blue {
     color: white;
     background-color: $color-blue;
   }
 
 
 }
+
 .icon {
   display: inline-block;
   width: 24px;

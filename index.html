@@ -1,53 +1,117 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>My First Parcel App</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet"/><link>
-    <link rel="stylesheet" href="scss/main.scss" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet"/>
+    <link>
+    <link rel="stylesheet" href="scss/main.scss"/>
     <script type="module" src="app.js"></script>
-  </head>
-  <body>
-  <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+</head>
+<body>
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
-      <symbol id="icon-menu" viewBox="0 0 32 32">
-        <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
-      </symbol>
+        <symbol id="icon-menu" viewBox="0 0 32 32">
+            <path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+        </symbol>
     </defs>
-  </svg>
-  <header class="Header">
- <div class="container">
-   <a href="" class="Header-logo">
-     <img src="img/site-logo.png" alt="siteLogo">
+</svg>
+<header class="Header">
+    <div class="container">
+        <a href="" class="Header-logo">
+            <img src="img/site-logo.png" alt="siteLogo">
 
-   </a>
-   <button class="Header-switch button button-icon" type="button">
-     <svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg>
-   </button>
-   <div class="Header-menu">
-     <div class="Header-menu-user">
-       <a href="">Register</a>
-       <a href="">Sing In</a>
-     </div>
-      <a class="Header-menu-property button button-blue"  href="">List your property</a>
-     <div class="Header-menu-helper">
-       <select >
-         <option value="">EN</option>
+        </a>
+        <button class="Header-switch button button-icon" type="button">
+            <svg class="icon icon-menu">
+                <use xlink:href="#icon-menu"></use>
+            </svg>
+        </button>
+        <div class="Header-menu">
+            <div class="Header-menu-user">
+                <a href="">Register</a>
+                <a href="">Sing In</a>
+            </div>
+            <a class="Header-menu-property button button-blue" href="">List your property</a>
+            <div class="Header-menu-helper">
+                <select>
+                    <option value="">EN</option>
 
-       </select>
-       <select >
-         <option value="">UAH</option>
-       </select>
+                </select>
+                <select>
+                    <option value="">UAH</option>
+                </select>
 
-     </div>
-  </div>
- </div>
-  </header>
-  <script src="js/jquery-3.6.1.min.js"></script>
-  <script src="js/main.js"></script>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="Navigation">
+    <div class="container">
+        <a class="Navigation-items" href="">Menu1</a>
+        <a class="Navigation-items" href="">Menu2</a>
+        <a class="Navigation-items" href="">Menu3</a>
+        <a class="Navigation-items" href="">Menu4</a>
+        <a class="Navigation-items" href="">Menu1</a>
+        <a class="Navigation-items" href="">Menu2</a>
+        <a class="Navigation-items" href="">Menu3</a>
+        <a class="Navigation-items" href="">Menu4</a>
+        <a class="Navigation-items" href="">Menu1</a>
+        <a class="Navigation-items" href="">Menu2</a>
+        <a class="Navigation-items" href="">Menu3</a>
+        <a class="Navigation-items" href="">Menu4</a>
+    </div>
 
-    
-  </body>
+</nav>
+<main class="Main">
+    <section class="Showcase">
+        <div class="container">
+            <h1>More deals than days in a year.</h1>
+            <h3>From cosy country homes to funky city flats</h3>
+            <div class="Search">
+                <form class="Search-form" action="">
+                    <div >
+                        <div>
+                            <input type="text">
+                        </div>
+
+                        <small>Destination, property name or adress </small>
+
+                    </div>
+                    <div>
+                        <div><input type="date"></div>
+                        <small>When</small>
+
+                    </div>
+                    <div>
+                        <select>
+                            <option value="">123</option>
+
+                        </select>
+                    </div>
+                    <div>
+                        <button type="button">
+                            Les't get started
+                        </button>
+                    </div>
+                    <div class="asd">
+                        Are you travelling for work?
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+
+    </section>
+</main>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
 </html>
