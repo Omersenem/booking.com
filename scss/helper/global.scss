@@ -1,8 +1,14 @@
 @import "../config/variable";
 
 body {
-  overflow: hidden;
+  //overflow: hidden;
   font-family: $font-family;
+  line-height: 1.4;
+
+
+}
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1.2;
 }
 
 .container {
@@ -21,17 +27,25 @@ button {
   background-color: transparent;
 }
 
+.select, .button, .text {
+  font-family: inherit;
+  border-radius: $border-radius;
+  border: 0;
+  font-weight: bold;
+
+  background-color: #fff;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   padding-left: 20px;
+  text-align: center;
   padding-right: 20px;
   height: $finger-size;
-  color: #fff;
-  font-family: inherit;
-  font-weight: bold;
-  background-color: transparent;
-  border-radius: $border-radius;
+  color: white;
+  background-color: $color-blue;
 
   &-icon {
     justify-content: center;
@@ -39,32 +53,61 @@ button {
     padding-right: 0;
     padding-left: 0;
     width: $finger-size;
+    background-color: transparent;
+
+
   }
 
-  &-blue {
-    color: white;
-    background-color: $color-blue;
+  &-full {
+    width: 100%;
+
   }
 
+  &-navy {
+    background-color: $color-navy;
+
+  }
 }
 
 .text {
-  font-family: inherit;
-  border: 0;
-  height: $finger-size;
+  min-height: $finger-size;
   border-radius: $border-radius;
   color: $color-navy;
-  font-weight: bold;
   padding-left: 10px;
   padding-right: 10px;
+  width: 100%;
+  &::placeholder {
+    color:rgba($color-navy, .7);
+  }
+}
+
+.select {
+
+  display: inline-block;
+  width: 100%;
+  height: $finger-size;
+  color: $color-navy;
+  border: 0;
+}
+.select-123 {
+  position: relative;
+  top: 10px;
+  -webkit-appearance: none;
+  border:0;
+  font-weight: bold;
+  background-color:#fff;
+  color: $color-navy;
 
 }
 
+
 .form-item {
+  display: flex;
   position: relative;
+
   .icon {
     position: absolute;
-    left: 20px;
+    left: 10px;
     top: 50%;
     transform: translateY(-50%);
     color: $color-navy;
@@ -74,6 +117,9 @@ button {
     padding-left: 40px;
   }
 
+  .select {
+    padding-left: 40px;
+  }
 }
 
 .icon {
@@ -83,4 +129,61 @@ button {
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+}
+
+.form-description {
+  margin-top: 5px;
+  font-size: $font-size-small;
+//TODO: Buraya @include mq('tablet') { fontsize:18px } niye veremiyoruz.
+  @include mq('tablet') {
+    margin-top: 20px;
+    font-size: $font-size;
+  }
+
+
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 10px;
+}
+
+.checkbox {
+  position: relative;
+  display: flex;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &:before {
+    content: '';
+    display: inline-block;
+    font-size: 18px;
+    width: 1em;
+    height: 1em;
+    border: 2px solid white;
+
+  }
+
+  .icon {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 3px;
+    margin-top: -2px;
+    width: 20px;
+    height: 20px;
+  }
+
+  input:checked + .icon {
+    display: block;
+  }
+
 }

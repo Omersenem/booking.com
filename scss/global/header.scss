@@ -1,7 +1,7 @@
 @import "../config/variable";
-
+$Header-height: 68px;
 .Header {
-  height: 68px;
+  height: $Header-height;
 
   .container {
     position: relative;
@@ -25,13 +25,12 @@
   &-menu {
     pointer-events: none;
     opacity: 0;
-    // transform: translateX(100%);
     transition: .2s;
     display: flex;
     position: fixed;
     left: 0;
     right: 0;
-    top: 100%;
+    top: $Header-height;
     padding-bottom: 20px;
     padding-left: $gutter;
     padding-right: $gutter;
